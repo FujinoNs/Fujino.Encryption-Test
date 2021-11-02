@@ -1,0 +1,135 @@
+﻿<Window
+    x:Class="Fujino.Encryption_Test.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Fujino.Encryption_Test"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="809"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBox
+            x:Name="txt_pass1"
+            Width="479"
+            Height="23"
+            Margin="87,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            Text="Cn9k5zfutm9YLh53"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txt_textin1"
+            Width="479"
+            Height="23"
+            Margin="87,34,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            Text="Hello, this is a test of Encryption. สวัสดี นี่คือการทดสอบการเข้ารหัส"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txt_pass2"
+            Width="489"
+            Height="23"
+            Margin="77,202,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txt_textin2"
+            Width="705"
+            Height="110"
+            Margin="77,261,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <Label
+            Margin="22,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Password" />
+        <Label
+            Margin="20,31,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Text Input" />
+        <Label
+            Margin="12,202,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Password" />
+        <Button
+            x:Name="btn_decrypt"
+            Width="103"
+            Height="51"
+            Margin="679,202,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="btn_decrypt_Click"
+            Content="Decrypt" />
+        <Button
+            x:Name="btn_encrypt"
+            Width="103"
+            Height="51"
+            Margin="679,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="btn_encrypt_Click"
+            Content="Encrypt" />
+        <Label
+            Margin="10,258,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Text Input" />
+        <TextBox
+            x:Name="txt_textout1"
+            Width="695"
+            Height="98"
+            Margin="87,62,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <Label
+            Margin="10,59,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Text Output" />
+        <TextBox
+            x:Name="txt_textout2"
+            Width="489"
+            Height="23"
+            Margin="77,230,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            TextWrapping="Wrap" />
+        <Label
+            Margin="0,227,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Text Output" />
+        <Button
+            x:Name="btn_decrypt_array"
+            Width="103"
+            Height="51"
+            Margin="571,202,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="btn_decrypt_array_Click"
+            Content="Decrypt Salt Array" />
+        <Button
+            x:Name="btn_encrypt_array"
+            Width="103"
+            Height="51"
+            Margin="571,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="btn_encrypt_array_Click"
+            Content="Encrypt Salt Array" />
+
+    </Grid>
+</Window>
